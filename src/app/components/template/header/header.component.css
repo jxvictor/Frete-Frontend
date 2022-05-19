@@ -1,0 +1,10 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.example-spacer2 {
+  flex: end;
+  margin-left: 0.2rem;
+}
+.topo{
+  font-family: 'Times New Roman', Times, serif;
+}

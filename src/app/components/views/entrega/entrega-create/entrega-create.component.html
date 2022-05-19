@@ -1,0 +1,27 @@
+<form>
+  <h1>CRIANDO NOVA ENTREGA</h1>
+
+  <mat-form-field class="form">
+      <mat-label>peso</mat-label>
+      <input matInput [(ngModel)]="entrega.peso" type="number" name="peso" placeholder="Ex: Severino da Silva Costa">
+  </mat-form-field>
+  <mat-form-field class="form">
+    <mat-label>cepOrigem</mat-label>
+    <input matInput [(ngModel)]="entrega.cepOrigem" type="text" name="cepOrigem" placeholder="Ex: 12323434522">
+</mat-form-field>
+  <mat-form-field class="form">
+    <mat-label>cepDestino</mat-label>
+    <input matInput [(ngModel)]="entrega.cepDestino" type="text" name="cepDestino" placeholder="Ex: severino@gmail.com">
+  </mat-form-field>
+  <mat-form-field class="form">
+    <mat-label>nomeDestinatario</mat-label>
+    <input matInput [(ngModel)]="entrega.nomeDestinatario" type="text" name="nomeDestinatario" placeholder="Ex: severino@gmail.com">
+  </mat-form-field>
+
+
+  <div class="buttons">
+      <button (click)="create()" class="mat-elevation-z8" mat-raised-button color="primary"> CRIAR </button>
+      <button (click)="cancel()" class="mat-elevation-z8" mat-raised-button color="warn"> CANCELAR </button>
+  </div>
+
+</form>
