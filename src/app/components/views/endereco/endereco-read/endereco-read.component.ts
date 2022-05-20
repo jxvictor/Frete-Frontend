@@ -26,9 +26,9 @@ export class EnderecoReadComponent implements OnInit {
 
   ngOnInit(): void {
     //this.findAll();
-    //this.pageEnderecos(0, 5);
+    this.pageEnderecos(0, 5);
   }
-  /*pageEnderecos(page: number, size: number){
+  pageEnderecos(page: number, size: number){
     this.service.findEnderecoPage(page, size).subscribe(resposta => {
       this.page = resposta;
       this.enderecos = this.page.content;
@@ -43,7 +43,7 @@ export class EnderecoReadComponent implements OnInit {
       this.page = resposta;
       this.enderecos = this.page.content;
     });
-  }*/
+  }
 
   /*findAll() {
     this.service.findAll().subscribe(res => {

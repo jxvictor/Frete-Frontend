@@ -20,9 +20,9 @@ export class EnderecoService {
   /*findAll():Observable<Endereco[]>{
     return this.http.get<Endereco[]>(this.endpoint)
   }*/
-  /*findEnderecoPage(page: number, size: number):Observable<any>{
+  findEnderecoPage(page: number, size: number):Observable<any>{
     return this.http.get(this.endpoint + `?page=${page}&size=${size}`);
-  }*/
+  }
 
   create(endereco: Endereco): Observable<Endereco>{
     return this.http.post<Endereco>(this.endpoint, endereco);
